@@ -3,9 +3,9 @@ import { responsiveWidth, responsiveHeight, responsiveFontSize } from 'react-nat
 import { FontAwesome, } from '@expo/vector-icons';
 import React, { useState } from "react";
 import TodoItem from "./TodoItem";
- 
+
 const Card = ({ title, items, deleteTodo, id, addItemToTodo,removeItemFromTodo,updateItemFromTodo }) =>{
-    const [todoItem,setTodoItem]=useState('')  
+    const [todoItem,setTodoItem]=useState('')
   return(
     <View style={styles.card}>
       <TouchableOpacity onPress={()=>{deleteTodo(id)}}>
