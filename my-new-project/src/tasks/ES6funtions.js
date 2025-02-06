@@ -69,6 +69,31 @@ const ES6Functions = () => {
 //   for (var i = 0; i < 3; i++) {
 //     setTimeout(() => console.log("var i:", i), 1000); // Output: 3, 3, 3 (same `i` for all iterations)
 //   }
+  / const throttle = (fn, limit) => {
+//   let flag = true;
+//   return function(){
+//     let context = this;
+//     let args = arguments;
+//     if(flag){
+//       fn.apply(context, args);
+//       flag = false;
+//       setTimeout(() => {
+//         flag=true;
+//       }, limit);
+//     }
+//   }
+// }
+// const debounce = function (fn, d) {
+//   let timer;
+//   return function () {
+//     let context = this,
+//       args = arguments;
+//     clearTimeout(timer);
+//     timer = setTimeout(() => {
+//       fn.apply(context, args);
+//     }, d);
+//   }
+// }
 
   for (let j = 0; j < 3; j++) {
     setTimeout(() => console.log("let j:", j), 1000); // Output: 0, 1, 2 (different `j` for each iteration)
